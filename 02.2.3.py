@@ -1,0 +1,9 @@
+P1 = 8*60+15 # tempo em segundos por km na v1
+P2 = 7*60+12 #mesmo que P1 so que na v2
+Ta = P1+3*P2+P1 # tempo andando em segundos
+Ta = Ta/60 #conversao para minutos
+Hi = 6*60+52 #hora de saida em minutos
+Hf = Hi + Ta #hora de chegada em minutos
+Horas = Hf // 60
+Minutos = Hf-Horas*60
+print("eta="+str(int(Horas))+"h"+str(int(Minutos))+"min")

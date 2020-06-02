@@ -1,0 +1,12 @@
+anylowercase1(s); anylowercase2(s) e anylowercase3(s) estão erradas
+
+anylowercase1(s) está errado pois só retornará o estado de is.lower do primeiro char
+
+anylowercase2(s) está errado pois na função "if 'c'.islower()" está chamando o
+char 'c', que é minusculo, logo, na primeira iteração já será chamado o return True
+
+O correto seria usar a varíavel c, não 'c'.
+
+anylowercase3(s) está errado pois dentro do for, o último estado de c.islower() será
+retornado
+
